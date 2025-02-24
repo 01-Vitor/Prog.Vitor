@@ -2,7 +2,7 @@
 
 int main() {
 
-    //Criando duas cartas do desaio SuperTrunfo - Paises
+    //Adicionando e calculando mais dois elementos, densidade populacional e pib per capita
 
     // Declarando as variáveis
     int populacao, populacao2;
@@ -39,6 +39,10 @@ int main() {
     printf("Digite a área da cidade: "); //Solicitando ao usuário que digite a área da cidade
     scanf("%f", &area); //Lendo a informação inserida pelo usuário referente a escolha da área da cidade
 
+    //Definindo a densidade populacional e o pib per capita carta 1
+    densidade = ((float)populacao / area); //Definindo a densidade populacional da carta 1
+    pib_per_capita = PIB / populacao; //Definindo o PIB per capita da carta 1
+
     printf("\n");
 
                                                             //Criação da Carta 2
@@ -65,6 +69,10 @@ int main() {
 
     printf("Digite a área da cidade: ");
     scanf("%f", &area2);
+
+    //Definindo a densidade populacional e o pib per capita carta 2
+    densidade2 = ((float)populacao2) / area2; //Definindo a densidade populacional da carta 2
+    pib_per_capita2 = PIB2 / populacao2; //Definindo o PIB per capita da carta 2
 
     //Exibindo os dados da carta 1
 
@@ -93,6 +101,5 @@ int main() {
     printf("PIB per capita: %.2f reais\n", pib_per_capita2);
 
     return 0;
-
-    
+       
 }
